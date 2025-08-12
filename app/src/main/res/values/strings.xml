@@ -1,11 +1,14 @@
 <resources>
     <string name="app_name">AssistBot</string>
-    <string name="welcome_message">Bienvenido a AssistBot</string>
-    <string name="description">Asistente de IA para resumen de documentaciones</string>
-    <string name="signin_title">Iniciar Sesión</string>
+
+    <!-- Login Screen -->
+    <string name="login_screen_header_title">Bienvenido a AssistBot</string>
+    <string name="login_screen_header_description">Asistente de IA para practicar tu inglés</string>
+    <string name="login_screen_form_title">Iniciar Sesión</string>
     <string name="email_placeholder">Correo Electrónico</string>
     <string name="password_placeholder">Contraseña</string>
     <string name="forgot_password">Olvide mí contraseña</string>
     <string name="dont_have_account">No tienes cuenta?</string>
     <string name="signup">Registrarse</string>
+    <string name="login_screen_footer_text">AssistBot © 2025</string>
 </resources>

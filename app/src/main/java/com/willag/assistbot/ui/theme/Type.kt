@@ -16,7 +16,6 @@ val ptSans = FontFamily(
     Font(R.font.ptsans_regular, FontWeight.Light)
 )
 
-// Set of Material typography styles to start with
 val Typography = Typography(
     bodyLarge = TextStyle(
         fontFamily = ptSans,
