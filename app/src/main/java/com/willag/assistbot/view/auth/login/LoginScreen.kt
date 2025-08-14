@@ -1,6 +1,5 @@
 package com.willag.assistbot.view.auth.login
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -146,13 +145,7 @@ fun LoginForm(
                 modifier = Modifier.fillMaxWidth(),
                 value = email,
                 onValueChange = onEmailChange,
-                labelText = stringResource(R.string.email_placeholder),
-                leadingIcon = {
-                    Image(
-                        imageVector = Icons.Default.Email,
-                        contentDescription = "Email Icon"
-                    )
-                },
+                labelText = stringResource(R.string.login_screen_textfield_email),
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
             )
             Spacer(modifier = Modifier.padding(Dimens.paddingMedium))
@@ -160,18 +153,15 @@ fun LoginForm(
                 modifier = Modifier.fillMaxWidth(),
                 value = password,
                 onValueChange = onPasswordChange,
-                labelText = stringResource(R.string.password_placeholder),
-                leadingIcon = {
-                    Image(
-                        imageVector = Icons.Default.Lock,
-                        contentDescription = "Password Icon"
-                    )
-                },
+                labelText = stringResource(R.string.login_screen_textfield_password),
                 trailingIcon = {
                     IconButton(onClick = { passwordHidden = !passwordHidden }) {
                         Icon(
                             imageVector = if (passwordHidden) Icons.Filled.Visibility else Icons.Filled.VisibilityOff,
-                            contentDescription = if (passwordHidden) "Mostrar" else "Ocultar"
+                            contentDescription = if (passwordHidden) stringResource(R.string.login_screen_content_description_password_show) else stringResource(
+                                R.string.login_screen_content_description_password_hide
+                            ),
+                            tint = MaterialTheme.colorScheme.primary
                         )
                     }
                 },
@@ -179,7 +169,7 @@ fun LoginForm(
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password)
             )
             AssistBotText(
-                text = stringResource(R.string.forgot_password),
+                text = stringResource(R.string.login_screen_text_forgot_password),
                 modifier = Modifier
                     .padding(top = Dimens.paddingMedium)
                     .align(Alignment.End),
@@ -203,13 +193,13 @@ fun LoginForm(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 AssistBotText(
-                    text = stringResource(R.string.dont_have_account),
+                    text = stringResource(R.string.login_screen_tex_dont_have_account),
                     style = MaterialTheme.typography.bodyMedium,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     modifier = Modifier.padding(end = Dimens.paddingSmall)
                 )
                 AssistBotText(
-                    text = stringResource(R.string.signup),
+                    text = stringResource(R.string.login_screen_text_signup),
                     color = MaterialTheme.colorScheme.primary,
                     style = TextStyle(
                         fontSize = MaterialTheme.typography.bodyMedium.fontSize,

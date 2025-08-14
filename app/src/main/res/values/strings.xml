@@ -5,10 +5,24 @@
     <string name="login_screen_header_title">Bienvenido a AssistBot</string>
     <string name="login_screen_header_description">Asistente de IA para practicar tu inglés</string>
     <string name="login_screen_form_title">Iniciar Sesión</string>
-    <string name="email_placeholder">Correo Electrónico</string>
-    <string name="password_placeholder">Contraseña</string>
-    <string name="forgot_password">Olvide mí contraseña</string>
-    <string name="dont_have_account">No tienes cuenta?</string>
-    <string name="signup">Registrarse</string>
+    <string name="login_screen_textfield_email">Correo Electrónico</string>
+    <string name="login_screen_textfield_password">Contraseña</string>
+    <string name="login_screen_text_forgot_password">Olvide mí contraseña</string>
+    <string name="login_screen_content_description_password_show">Icono Mostrar Contraseña</string>
+    <string name="login_screen_content_description_password_hide">Icono Ocultar Contraseña</string>
+    <string name="login_screen_tex_dont_have_account">No tienes cuenta?</string>
+    <string name="login_screen_text_signup">Registrarse</string>
     <string name="login_screen_footer_text">AssistBot © 2025</string>
+
+    <!-- Sign Up Screen -->
+    <string name="signup_screen_header_title">Crea tu cuenta</string>
+    <string name="signup_screen_header_description">Crea una cuenta en sencillos pasos</string>
+    <string name="signup_screen_textfield_name">Nombre Completo</string>
+    <string name="signup_screen_textfield_email">Correo Electrónico</string>
+    <string name="signup_screen_textfield_password">Contraseña</string>
+    <string name="signup_screen_textfield_confirm_password">Confirmar Contraseña</string>
+    <string name="signup_screen_checkbox_terms_conditions">Acepto los términos y condiciones</string>
+    <string name="signup_screen_button_signup">Registrarse</string>
+    <string name="signup_screen_text_already_have_account">¿Ya tienes una cuenta?</string>
+    <string name="signup_screen_text_login">Iniciar Sesión</string>
 </resources>

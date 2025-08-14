@@ -6,6 +6,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.willag.assistbot.view.auth.login.LoginScreen
 import com.willag.assistbot.view.auth.register.RegisterScreen
+import com.willag.assistbot.view.onboarding.OnBoardingScreen
 
 @Composable
 fun NavigationWrapper() {
@@ -18,7 +19,15 @@ fun NavigationWrapper() {
             })
         }
         composable<Register> {
-            RegisterScreen()
+            RegisterScreen(onNavigateToLogin = {
+                navController.navigate(Login) {
+                    popUpTo(Login) { inclusive = true }
+                }
+            })
+        }
+
+        composable<Onboarding> {
+            OnBoardingScreen()
         }
     }
 }

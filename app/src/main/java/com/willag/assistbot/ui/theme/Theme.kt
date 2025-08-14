@@ -104,7 +104,7 @@ fun AssistBotTheme(
     }
 
     MaterialTheme(
-        colorScheme = colorScheme,
+        colorScheme = lightScheme,
         typography = Typography,
         shapes = shapes,
         content = content
