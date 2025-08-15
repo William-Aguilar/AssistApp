@@ -32,12 +32,16 @@ import com.willag.assistbot.view.core.components.AssistBotTextField
 @Composable
 fun RegisterScreenPreview() {
     AssistBotTheme {
-        RegisterScreen(onNavigateToLogin = {})
+        RegisterScreen(onNavigateToOnboarding = {}, onNavigateToLogin = {})
     }
 }
 
 @Composable
-fun RegisterScreen(registerViewModel: RegisterViewModel = hiltViewModel(), onNavigateToLogin: () -> Unit) {
+fun RegisterScreen(
+    registerViewModel: RegisterViewModel = hiltViewModel(),
+    onNavigateToOnboarding: () -> Unit,
+    onNavigateToLogin: () -> Unit
+) {
     Scaffold { paddingValues ->
         Column(
             Modifier
@@ -133,8 +137,8 @@ fun RegisterScreen(registerViewModel: RegisterViewModel = hiltViewModel(), onNav
                     Spacer(modifier = Modifier.padding(Dimens.paddingLarge))
                     AssistBotButton(
                         modifier = Modifier.fillMaxWidth(),
-                        onClick = { /* TODO: Handle login action */ },
-                        enabled = false,
+                        onClick = { onNavigateToOnboarding() },
+                        enabled = true,
                         text = stringResource(R.string.signup_screen_button_signup)
                     )
                     Spacer(modifier = Modifier.padding(Dimens.paddingMedium))

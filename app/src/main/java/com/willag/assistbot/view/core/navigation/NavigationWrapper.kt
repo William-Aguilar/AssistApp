@@ -19,7 +19,13 @@ fun NavigationWrapper() {
             })
         }
         composable<Register> {
-            RegisterScreen(onNavigateToLogin = {
+            RegisterScreen(
+                onNavigateToOnboarding = {
+                    navController.navigate(Onboarding) {
+                        popUpTo(Onboarding) { inclusive = true }
+                    }
+                },
+                onNavigateToLogin = {
                 navController.navigate(Login) {
                     popUpTo(Login) { inclusive = true }
                 }
