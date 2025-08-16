@@ -25,4 +25,10 @@
     <string name="signup_screen_button_signup">Registrarse</string>
     <string name="signup_screen_text_already_have_account">¿Ya tienes una cuenta?</string>
     <string name="signup_screen_text_login">Iniciar Sesión</string>
+
+    <!-- Objectives Screen -->
+    <string name="objectives_screen_header_title">La aventura comienza</string>
+    <string name="objectives_screen_header_description">Selecciona al menos un objetivo de aprendizaje</string>
+    <string name="objectives_screen_textfield_objective">Objetivo de Aprendizaje</string>
+    <string name="objectives_screen_button_continue">Continuar</string>
 </resources>

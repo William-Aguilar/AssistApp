@@ -6,6 +6,7 @@ import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import com.willag.assistbot.view.onboarding.objectives.ObjectiveScreen
 
 @Composable
 fun OnBoardingScreen() {
@@ -19,6 +20,7 @@ fun OnBoardingScreen() {
             state = pageState
         ) { page ->
             when (page) {
+                0 -> ObjectiveScreen()
                 /*0 -> ObjectiveScreen()
                 1 -> FeaturesScreen()
                 2 -> GetStartedScreen()*/
